@@ -12,15 +12,15 @@ const config = Platform.select({
   default: {},
 });
 
-const HomeStack = createStackNavigator(
+const ExercisesStack = createStackNavigator(
   {
     Home: HomeScreen,
   },
   config
 );
 
-HomeStack.navigationOptions = {
-  tabBarLabel: 'Home',
+ExercisesStack.navigationOptions = {
+  tabBarLabel: 'Exercises',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
@@ -33,7 +33,7 @@ HomeStack.navigationOptions = {
   ),
 };
 
-HomeStack.path = '';
+ExercisesStack.path = '';
 
 const LinksStack = createStackNavigator(
   {
@@ -43,9 +43,9 @@ const LinksStack = createStackNavigator(
 );
 
 LinksStack.navigationOptions = {
-  tabBarLabel: 'Links',
+  tabBarLabel: 'Workouts',
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-link' : 'md-link'} />
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-calendar' : 'md-calendar'} />
   ),
 };
 
@@ -68,7 +68,7 @@ SettingsStack.navigationOptions = {
 SettingsStack.path = '';
 
 const tabNavigator = createBottomTabNavigator({
-  HomeStack,
+  ExercisesStack,
   LinksStack,
   SettingsStack,
 });
