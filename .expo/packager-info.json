@@ -2,8 +2,8 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 17333,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "packagerPid": 25865,
+  "expoServerNgrokUrl": "https://5p-gy9.anonymous.workoutappnativefrontend.exp.direct",
+  "packagerNgrokUrl": "https://packager.5p-gy9.anonymous.workoutappnativefrontend.exp.direct",
+  "ngrokPid": 25882
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { Container, Content, Left, List, ListItem, Right, Text, Icon } from 'native-base';
+import { Container, Body, Content, Left, List, ListItem, Right, Text, Icon } from 'native-base';
 import { LinearGradient } from 'expo-linear-gradient';
 
 const styles = StyleSheet.create({
@@ -8,11 +8,11 @@ const styles = StyleSheet.create({
     margin: 5,
   },
   exerciseItem: {
-    height: 100,
+    height: 75,
     // backgroundColor: linea
     // backgroundColor: 'red',
     // textTransform: 'uppercase',
-    margin: 5,
+    margin: 4,
     borderRadius: 15,
   }, 
   exerciseItemContent: {
@@ -28,6 +28,11 @@ const exercises = [
   { name: 'Leg Lifts' },
   { name: 'Running' },
   { name: 'Pistol Squats' },
+  { name: 'Squats' },
+  { name: 'Push Ups' },
+  { name: 'Leg Lifts' },
+  { name: 'Running' },
+  { name: 'Pistol Squats' },  
 ]
 
 const ExercisesList = props => {
@@ -64,6 +69,12 @@ const ExercisesList = props => {
                 <Left>
                   <Text onPress={() => props.navigation.navigate('Links')} style={styles.exerciseItemContent}>{exercise.name}</Text>
                 </Left>
+                <Left>
+                  <Text onPress={() => props.navigation.navigate('Links')} style={styles.exerciseItemContent}>{exercise.name}</Text>
+                </Left>                
+                <Body>
+                <Text>Hello</Text>
+                </Body>
                 <Right>
                   <Icon name="arrow-forward" style={{ color: 'white' }} />
                 </Right>
